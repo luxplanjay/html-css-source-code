@@ -1,0 +1,75 @@
+.filter-form {
+  width: 294px;
+  padding: 0 16px;
+}
+
+.size-filter-title {
+  color: #2a2a2a;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 38px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.size-filter-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.size-filter-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.size-filter-label::before {
+  display: inline-block;
+  content: '';
+  width: 14px;
+  height: 14px;
+  margin-right: 12px;
+  background-image: url('../img/icon-square.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.size-filter-item-size {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 34px;
+  color: #2a2a2a;
+  text-transform: uppercase;
+}
+
+.size-filter-item-count {
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  margin-left: auto;
+  background-color: #2a2a2a;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 23px;
+}
+
+.size-filter-check:checked + .size-filter-label {
+  padding-left: 12px;
+}
+
+.size-filter-check:checked + .size-filter-label::before {
+  background-image: url('../img/icon-check.svg');
+}
+
+.size-filter-check:checked + .size-filter-label .size-filter-item-size {
+  color: #d58e32;
+}
+
+.size-filter-check:checked + .size-filter-label .size-filter-item-count {
+  background-color: #d58e32;
+}

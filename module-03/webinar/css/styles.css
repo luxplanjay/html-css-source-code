@@ -1,0 +1,96 @@
+body {
+  font-family: "Raleway", "Arial", sans-serif;
+  color: #6c7279;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.page-header {
+  background-color: #3a3e64;
+}
+
+.site-navigation {
+  font-size: 13px;
+  list-style: none;
+}
+
+.site-navigation a {
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 16px;
+}
+
+.site-navigation a:hover {
+  color: #e84545;
+}
+
+.features-list {
+  list-style: none;
+}
+
+.features-list-item h3 {
+  color: #2d3033;
+  line-height: 17px;
+}
+
+.team-list {
+  list-style: none;
+}
+
+.team-list-name {
+  font-size: 22px;
+  line-height: 26px;
+  color: #2d3033;
+}
+
+.team-list-occupation {
+  font-size: 13px;
+  line-height: 16px;
+  color: #e84545;
+}
+
+.page-footer {
+  background-color: #3a3e64;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* .text {
+  font-size: 34px;
+  font-weight: 700;
+  text-indent: 20px;
+  font-style: italic;
+  line-height: 40px;
+  font-family: "Roboto", "Arial", "Times New Roman", sans-serif;
+} */
+
+/* 300 - light
+400 - regular
+600 - semibold */
+/* 700 - bold */
+
+/* body {
+   min-height: 100vh;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqysJKfLpvNg4Is0Geg3rnQr02vUdTyj4Qs5C-w5RemXzd4lCp');
+   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+} */

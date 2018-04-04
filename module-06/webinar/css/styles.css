@@ -1,0 +1,173 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.about {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.about-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.masthead {
+  min-height: 100px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  background-color: palegoldenrod;
+}
+
+.masthead ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 320px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.masthead li {
+  padding: 10px 20px;
+  background-color: palevioletred;
+}
+
+.masthead li:hover {
+  background-color: #212121;
+  color: #fff;
+}
+
+.about-item {
+  flex-basis: 300px;
+  padding: 10px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.about-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.about-item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
+
+.wrapper-1 {
+  min-height: 100vh;
+  display: flex;
+}
+
+.sidebar {
+  background-color: teal;
+  flex-basis: 250px;
+}
+
+.content {
+  background-color: orange;
+  flex-grow: 1;
+}
+
+.box {
+  display: flex;
+  height: 500px;
+  width: 500px;
+  background-color: #212121;
+}
+
+.inner {
+  margin: auto;
+  height: 150px;
+  width: 150px;
+  background-color: palegoldenrod;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: teal;
+}
+
+main {
+  flex-grow: 1;
+  background-color: aqua;
+}
+
+footer {
+  background-color: palevioletred;
+}
+
+.flex-container {
+  width: 1000px;
+  margin: auto;
+  display: flex;
+  padding: 10px;
+  background-color: #212121;
+}
+
+/* - Свойства flex-элемента:
+ width vs flex-basis,
+ align-self,
+ flex-grow,
+ flex-shrink, order.
+*/
+
+.flex-child {
+  /* flex-basis: 200px;
+  flex-grow: 1;
+  flex-shrink: 0; */
+  /* flex: 1 0 200px; */
+  flex-basis: 100px;
+
+  height: 100px;
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+  line-height: 100px;
+  background-color: teal;
+}
+
+.flex-child:nth-child(1) {
+  background-color: #214e34;
+}
+
+.flex-child:nth-child(2) {
+  background-color: #ffb140;
+}
+
+.flex-child:nth-child(3) {
+  background-color: #d1462f;
+}
+
+.flex-child:nth-child(4) {
+  background-color: #197bbd;
+}

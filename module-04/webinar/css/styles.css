@@ -1,0 +1,168 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.page-header {
+  padding: 20px 0;
+  outline: 2px solid brown;
+}
+
+.logo {
+  outline: 2px solid orange;
+  float: left;
+}
+
+.catalog {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.menu {
+  float: right;
+  width: 300px;
+  outline: 2px solid blue;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  float: left;
+  background-color: #424242;
+}
+
+.catalog-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.catalog-item {
+  float: left;
+  width: 300px;
+  outline: 2px solid #424242;
+}
+
+.catalog-item:not(:nth-child(3n)) {
+  margin-right: 50px;
+}
+
+.catalog-item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 50px;
+}
+
+/* PSEUDOELEMENTS */
+
+/* .link {
+  display: inline-block;
+  text-decoration: none;
+  border: 2px solid #424242;
+  padding: 10px 20px;
+}
+
+.login::before,
+.logout::after {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  content: "";
+  vertical-align: middle;
+
+  background-size: contain;
+  background-position: center;
+}
+
+.login::before {
+  background-image: url("../img/icons/icon-login.png");
+}
+
+.logout::after {
+  background-image: url("../img/icons/icon-logout.png");
+}
+
+p::selection {
+  color: #fff;
+  background-color: #424242;
+}
+
+p::before {
+  content: "\21A0";
+  color: red;
+}
+
+p::after {
+  content: "\21A9";
+  color: green;
+}
+
+h2 {
+  text-align: center;
+}
+
+h2::before {
+  display: block;
+  width: 60px;
+  height: 2px;
+  background-color: red;
+  content: '';
+  margin: 0 auto;
+} */
+
+.container {
+  padding: 20px;
+  background-color: #424242;
+}
+
+.clearfix::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.red {
+  float: right;
+  width: 250px;
+  height: 150px;
+  background-color: #ff5252;
+}
+
+.green {
+  float: right;
+  width: 300px;
+  height: 175px;
+  background-color: #4caf50;
+}
+
+.blue {
+  float: right;
+  width: 350px;
+  height: 200px;
+  background-color: #2196f3;
+}
+
+/* POST */
+.post {
+  width: 960px;
+  outline: 2px solid #424242;
+}
+
+.post p {
+}
+
+.post img {
+  margin-right: 15px;
+  margin-bottom: 15px;
+  float: left;
+}

@@ -1,0 +1,65 @@
+body {
+  font-family: Roboto, 'Open Sans', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #424242;
+}
+
+.section {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 1rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #424242;
+}
+
+.section h2 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.section h3 {
+  display: inline-block;
+  padding: 0 0.5rem;
+  font-size: 2rem;
+  background-color: #424242;
+  color: #fff;
+}
+
+.section > div {
+  width: 100%;
+}
+
+.section img {
+  display: block;
+  width: 80%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+}
+
+.small-img {
+  width: 50% !important;
+}
+
+.section ul {
+  display: inline-block;
+  margin: auto;
+  padding: 0;
+  font-size: 1.75rem;
+}
+
+.section p {
+  font-size: 1.75rem;
+}
+
+.section li {
+  margin-bottom: 0.5rem;
+}
+
+code {
+  font-family: monospace;
+  font-weight: 700;
+  color: #212112;
+}

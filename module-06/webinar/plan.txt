@@ -1,0 +1,17 @@
+http://css-live.ru/wp-content/uploads/2014/10/flexboxsheet-small__5.png
+
+- Знакомство с Flexbox
+- display: flex
+- Понятие flex-контейнера и flex-элемента.
+- Flex-оси и flex-direction.
+- Выравнивание flex-элементов на оси, justify-content, align-items.
+- Многострочные flex-контейнеры и align-content.
+- Свойства flex-элемента: width vs flex-basis, align-self, flex-grow, flex-shrink, order.
+
+use cases:
+- sticky footer
+- grid
+- center stuff
+- equal height columns
+- fixed sidebar + rest content
+- infinity

@@ -1,0 +1,21 @@
+Занятие #1:
+- Формы, валидная и семантичная верстка форм.
+- input всевозможных типов, от text до range.
+- label
+- placeholder и его стилизация.
+- Важность атрибута name.
+- autofocus
+- required
+- checkbox и radio
+- fieldset и legend
+- button:submit и button:reset
+- select, optgroup, datalist
+
+https://www.artlebedev.ru/technogrette/etc/forms/
+https://developers.google.com/web/fundamentals/design-and-ux/input/forms/
+https://code.tutsplus.com/ru/tutorials/the-30-css-selectors-you-must-memorize--net-16048
+
+Занятие #2:
+- Подключение и работа с локальными шрифтами.
+- Использование одного локального шрифта с разным начертанием или жирностью.
+- Абсолютные и относительные единицы CSS.

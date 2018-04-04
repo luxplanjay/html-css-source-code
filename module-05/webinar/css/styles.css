@@ -1,0 +1,217 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.card {
+  width: 270px;
+  padding: 10px;
+  border: 2px solid #424242;
+  text-align: center;
+}
+
+.card-content {
+  position: relative;
+}
+
+.card-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  border: none;
+  padding: 0;
+  margin: 0;
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  cursor: pointer;
+  background-image: url('../img/heart.svg');
+}
+
+.card-button:hover {
+  background-image: url('../img/heart-hover.svg');
+}
+
+.card:hover .social-icons {
+  opacity: 1;
+}
+
+.social-icons {
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-icons li {
+  float: left;
+}
+
+.social-icons a {
+  display: block;
+  height: 50px;
+  width: 50px;
+  background-color: teal;
+}
+
+.social-icons a:hover {
+  background-color: palevioletred;
+}
+
+.box {
+  height: 150px;
+  width: 150px;
+  text-align: center;
+  line-height: 150px;
+  font-size: 60px;
+  font-weight: 700;
+}
+
+/*
+	Значение relative для свойства position позволяет
+	элементам отображаться в пределах обычного потока документа,
+	оставляя пространство для элемента по учмолчанию и
+	не позволяя другим элементам его обтекать; однако оно
+	позволяет изменять положение отображения элемента с
+	помощью свойств смещения left|right|top|bottom.
+*/
+
+/*
+	Значение absolute для свойства position отличается
+	от relative тем, что элемент с абсолютным значением
+	position не будет отображаться в нормальном потоке
+	документа, а исходное пространство и позиция, абсолютно
+	позиционированного элемента, не будут сохранены.
+
+	Кроме того, абсолютно позиционированные элементы
+	перемещаются относительно	их ближайшего родительского
+	элемента с position отличным от static. Если такой
+	родительский элемент не существует, абсолютно
+	позиционированный элемент будет располагаться	относительно
+	элемента body.
+*/
+
+body {
+  padding: 20px;
+}
+
+.parent {
+  position: relative;
+  height: 500px;
+  width: 500px;
+}
+
+/* .box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 20%;
+  height: 20%;
+
+   margin-top: -75px;
+  margin-left: -75px;
+} */
+
+/*
+	position fixed позиционирует элемент относительно
+	окна браузера! Элемент как будто прибит к определенному
+	месту на viewport.
+*/
+
+/* .fixed {
+  position: fixed;
+  width: 150px;
+  height: 150px;
+  right: 150px;
+  top: 100px;
+} */
+
+/* z-index */
+
+.box {
+  position: absolute;
+}
+
+.box:nth-child(1) {
+  top: 25px;
+  left: 25px;
+  z-index: 5;
+}
+
+.box:nth-child(2) {
+  top: 50px;
+  left: 50px;
+  z-index: 4;
+}
+
+.box:nth-child(3) {
+  top: 75px;
+  left: 75px;
+  z-index: 3;
+}
+
+/* Utils */
+.dodger {
+  background-color: #1789fc;
+}
+
+.topaz {
+  background-color: #ffd07b;
+}
+
+.gunmetal {
+  background-color: #2b2d42;
+}
+
+.pantone {
+  background-color: #ef233c;
+}
+
+.teal {
+  background-color: teal;
+}
+
+.palered {
+  background-color: palevioletred;
+}
+
+/* visually-hidden helper */
+.visually-hidden:not(:focus):not(:active),
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

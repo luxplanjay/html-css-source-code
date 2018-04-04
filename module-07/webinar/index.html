@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Webinar 27-03</title>
+  <link rel="stylesheet" href="css/normlize.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <form class="profile-form" method="get" action="#">
+    <section class="section custom">
+      <h2>Custom checkboxes</h2>
+
+      <ul class="custom-list">
+        <li>
+          <input class="visually-hidden" type="checkbox" name="custom_check" id="custom_check_1">
+          <label for="custom_check_1">custom check 1</label>
+        </li>
+        <li>
+          <input class="visually-hidden" type="checkbox" name="custom_check" id="custom_check_2">
+          <label for="custom_check_2">custom check 2</label>
+        </li>
+        <li>
+          <input class="visually-hidden" type="checkbox" name="custom_check" id="custom_check_3">
+          <label for="custom_check_3">custom check 3</label>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Personal data</h2>
+      <ul>
+        <li>
+          <input type="email" placeholder="Email*" autofocus name="user_email" required autocomplete="off">
+        </li>
+        <li>
+          <input type="password" placeholder="Password*" name="user_pass" required>
+        </li>
+        <li>
+          <textarea name="description" placeholder="Message..." cols="30" rows="10"></textarea>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Screen sizes</h2>
+      <ul class="screen-size-list">
+        <li>
+          <input type="checkbox" name="screen_size" value="13" id="screen_size_13">
+          <label for="screen_size_13">13"</label>
+        </li>
+        <li>
+          <input type="checkbox" name="screen_size" value="15" id="screen_size_15">
+          <label for="screen_size_15">15"</label>
+        </li>
+        <li>
+          <input type="checkbox" name="screen_size" value="17" id="screen_size_17">
+          <label for="screen_size_17">17"</label>
+        </li>
+      </ul>
+    </section>
+
+
+    <section class="section">
+      <h2>Profile theme</h2>
+      <ul class="theme-list">
+        <li>
+          <label>
+            <input type="radio" name="theme_type" value="default">default</label>
+        </li>
+        <li>
+          <label>
+            <input type="radio" name="theme_type" value="dark">dark</label>
+        </li>
+        <li>
+          <label>
+            <input type="radio" name="theme_type" value="light">light</label>
+        </li>
+      </ul>
+    </section>
+
+
+    <section class="section">
+      <h2>City</h2>
+      <select name="city">
+        <option value="kiev">Киев</option>
+        <option value="kahrkov">Харьков</option>
+        <option value="handuras">Гандурас</option>
+      </select>
+    </section>
+
+
+    <button type="submit">Sign Up</button>
+    <button type="reset">Clear Form</button>
+
+  </form>
+
+</body>
+
+</html>

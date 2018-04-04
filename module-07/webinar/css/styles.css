@@ -1,0 +1,117 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  margin: 100px auto;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
+
+.profile-form ul {
+  list-style: none;
+}
+
+.profile-form input {
+  border: 0;
+  border-bottom: 2px solid #212121;
+  margin-bottom: 15px;
+}
+
+.profile-form input::placeholder {
+  color: #424242;
+}
+
+.profile-form input:focus {
+  outline: 0;
+  padding-bottom: 5px;
+}
+
+.screen-size-list input:checked + label {
+  background-color: red;
+}
+
+.profile-form input[type='email']:valid,
+.profile-form input[type='password']:valid {
+  border-color: green;
+}
+
+.profile-form input[type='email']:invalid,
+.profile-form input[type='password']:invalid {
+  border-color: red;
+}
+
+.profile-form button {
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  margin-bottom: 10px;
+  background-color: #212121;
+  color: #fff;
+  padding: 5px 10px;
+}
+
+textarea {
+  resize: none;
+}
+
+/* CUSTOM CHECKBOXES */
+.custom-list label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.custom-list label::before {
+  display: inline-block;
+  content: '';
+  width: 15px;
+  height: 15px;
+  border: 2px solid #212121;
+  margin-right: 10px;
+}
+
+.custom-list input[type='checkbox']:checked + label::before {
+  /* background-color: orange; */
+  background-image: url('https://image.flaticon.com/icons/svg/128/128384.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+/* visually-hidden helper */
+.visually-hidden:not(:focus):not(:active),
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

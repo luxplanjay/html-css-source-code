@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Practise</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/price-filter.css">
+  <link rel="stylesheet" href="css/size-filter.css">
+</head>
+
+<body>
+  <!-- FILTER FORM -->
+  <form class="filter-form">
+    <section class="size-filter">
+      <h2 class="size-filter-title">Filter By Size</h2>
+
+      <ul class="size-filter-list">
+        <li class="size-filter-item">
+          <input class="size-filter-check visually-hidden" type="checkbox" name="item_size"
+            value="small" id="size-s">
+          <label for="size-s" class="size-filter-label">
+            <span class="size-filter-item-size">s</span>
+            <span class="size-filter-item-count">3</span>
+          </label>
+        </li>
+        <li class="size-filter-item">
+          <input class="size-filter-check visually-hidden" type="checkbox" name="item_size"
+            value="medium" id="size-m">
+          <label for="size-m" class="size-filter-label">
+            <span class="size-filter-item-size">m</span>
+            <span class="size-filter-item-count">4</span>
+          </label>
+        </li>
+        <li class="size-filter-item">
+          <input class="size-filter-check visually-hidden" type="checkbox" name="item_size"
+            value="large" id="size-l">
+          <label for="size-l" class="size-filter-label">
+            <span class="size-filter-item-size">l</span>
+            <span class="size-filter-item-count">5</span>
+          </label>
+        </li>
+        <li class="size-filter-item">
+          <input class="size-filter-check visually-hidden" type="checkbox" name="item_size"
+            value="x-large" id="size-xl">
+          <label for="size-xl" class="size-filter-label">
+            <span class="size-filter-item-size">xl</span>
+            <span class="size-filter-item-count">6</span>
+          </label>
+        </li>
+        <li class="size-filter-item">
+          <input class="size-filter-check visually-hidden" type="checkbox" name="item_size"
+            value="xx-large" id="size-xx">
+          <label for="size-xx" class="size-filter-label">
+            <span class="size-filter-item-size">xx</span>
+            <span class="size-filter-item-count">5</span>
+          </label>
+        </li>
+      </ul>
+    </section>
+  </form>
+
+  <!-- PRICE FILTER -->
+  <div class="price-filter">
+    <div class="range-controls">
+      <div class="scale">
+        <div class="bar" style="width: 70%;"></div>
+      </div>
+
+      <div class="range-toggle range-toggle-min"></div>
+      <div class="range-toggle range-toggle-max"></div>
+    </div>
+
+    <div class="price-controls">
+      <label class="min-price">
+        от
+        <input type="text" value="1000" name="min_price">
+      </label>
+
+      <label class="max-price">
+        до
+        <input type="text" value="10 000" name="max_price">
+      </label>
+    </div>
+  </div>
+</body>
+
+</html>
