@@ -1,0 +1,37 @@
+- Chrome DevTools для работы с мобильной версткой.
+
+- viewport meta tag.
+    https://itchief.ru/lessons/html-and-css/meta-viewport-how-it-works
+    https://developer.mozilla.org/ru/docs/Mozilla/Mobile/Viewport_meta_tag
+
+- сеточный вьюпорт и визуальный вьюпорт
+  https://monosnap.com/file/Gdqfeei7GIbuZ2uAmR6kjCP64cNJAf
+  медиа работают на сеточный, нам надо на визуальный,
+  для этого
+  viewport width(сеточный)=device-width(визуальный)
+  initial-scale=1 тоже самое что выше... для других браузеров
+
+  https://www.w3.org/TR/css-device-adapt-1/#at-ruledef-viewport
+    @viewport {
+      width: device-width;
+      zoom: 1.0
+    }
+
+- Медиаправила
+  https://css-tricks.com/logic-in-media-queries/
+  https://developer.mozilla.org/en-US/docs/Web/CSS/@media
+
+- Философия отзывчивой и адаптивной верстки.
+  https://codepen.io/Zerk/pen/Ovoyoo?editors=0110
+  https://codepen.io/Zerk/pen/xYYjdz
+
+- mobile-first CSS
+  тесты на реальных девайсах
+  оптимизация веса, загрузка, производительность
+  верстка
+  прячем контент
+  разное оформление(на мобильном все больше)
+  разное положение элементов интерфейса
+
+- Адаптивная сетка
+

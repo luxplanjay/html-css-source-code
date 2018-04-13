@@ -1,0 +1,147 @@
+@media (max-width: 599px) {
+  .page-header {
+    margin-bottom: 70px;
+  }
+
+  .page-nav {
+    padding: 20px 0;
+  }
+
+  .site-logo {
+    margin-bottom: 20px;
+  }
+
+  .site-logo img {
+    margin: 0 auto;
+  }
+
+  .site-navigation a {
+    padding: 5px 0;
+    font-size: 24px;
+    line-height: 1;
+    text-align: center;
+  }
+
+  .banner {
+    display: none;
+  }
+
+  .features-list-item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  .team-list-item {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .team-list-item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 600px) {
+  .container {
+    width: 600px;
+  }
+
+  .page-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .site-navigation {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    margin-bottom: 120px;
+
+    background-image: linear-gradient(
+        to right,
+        rgba(239, 59, 54, 0.3),
+        rgba(255, 255, 255, 0.3)
+      ),
+      linear-gradient(to top, rgba(0, 210, 255, 0.3), rgba(145, 140, 170, 0.3)),
+      url('../img/banner.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .slider {
+    height: 150px;
+    background-color: #fff;
+  }
+
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .features-list-item {
+    flex: 0 0 270px;
+  }
+
+  .team-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .team-list-item {
+    flex: 0 0 270px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1169px) {
+  .site-logo {
+    margin-bottom: 30px;
+  }
+
+  .site-navigation {
+    width: 100%;
+  }
+
+  .features-list-item:not(:nth-last-child(-n + 2)),
+  .team-list-item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 1170px) {
+  .container {
+    width: 1170px;
+  }
+
+  .page-nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .site-navigation {
+    flex: 0 0 600px;
+  }
+
+  .banner {
+    min-height: 400px;
+  }
+
+  .features-list-item {
+    flex: 0 0 370px;
+    margin-bottom: 72px;
+    padding: 0 38px;
+  }
+
+  .features-list-item:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
+}
