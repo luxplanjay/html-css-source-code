@@ -1,0 +1,78 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'PT Sans', sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* .icon {
+  display: inline-block;
+  width: 79px;
+  height: 60px;
+  margin: 20px;
+  background-image: url('../img/icon.png');
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .icon {
+    background-image: url('../img/icon@2x.png');
+  }
+} */
+
+/* .icon-clock {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-image: url('../img/icon-clock.svg');
+  background-size: cover;
+  background-position: center;
+}
+
+.svg-clock {
+  fill: palevioletred;
+  stroke: black;
+}
+
+.svg-clock:hover {
+  fill: teal;
+  stroke: orange;
+} */
+
+.icon {
+  display: inline-block;
+  fill: teal;
+}
+
+.icon:hover {
+  fill: palevioletred;
+}

@@ -1,0 +1,341 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Raleway', 'Arial', sans-serif;
+  color: #6c7279;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.page-header {
+  background-color: #3a3e64;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.page-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100px;
+}
+
+.site-logo {
+  display: inline-block;
+  animation: logo-appear 1s linear;
+}
+
+@keyframes logo-appear {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateY(0);
+    opacity: 1;
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* site navigation */
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  list-style: none;
+}
+
+.site-navigation a {
+  display: block;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 16px;
+  transition: color 0.2s linear;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: #e84545;
+}
+
+/* BANNER */
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 600px;
+  margin-bottom: 120px;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(239, 59, 54, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    linear-gradient(to top, rgba(0, 210, 255, 0.3), rgba(145, 140, 170, 0.3)),
+    url('../img/banner.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.slider {
+  height: 150px;
+  background-color: #fff;
+}
+
+/* FEATURES SECTION */
+.features {
+  margin-bottom: 120px;
+}
+
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.features-list-item {
+  flex: 0 0 370px;
+  margin-bottom: 72px;
+  padding: 0 38px;
+  text-align: center;
+}
+
+.features-list-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.features-list-item::before {
+  content: '';
+  display: block;
+  height: 60px;
+  margin-bottom: 34px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.icon-tools::before {
+  background-image: url('../img/icons/features/icon-tools.png');
+}
+
+.icon-computer::before {
+  background-image: url('../img/icons/features/icon-computer.png');
+}
+
+.icon-bulb::before {
+  background-image: url('../img/icons/features/icon-bulb.png');
+}
+
+.icon-atom::before {
+  background-image: url('../img/icons/features/icon-atom.png');
+}
+
+.icon-case::before {
+  background-image: url('../img/icons/features/icon-case.png');
+}
+
+.icon-download::before {
+  background-image: url('../img/icons/features/icon-download.png');
+}
+
+.features-list-item h3 {
+  margin-bottom: 24px;
+  margin-top: 0;
+  color: #2d3033;
+  line-height: 17px;
+  font-size: 14px;
+}
+
+.features-list-item p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* TEAM SECTION */
+.team {
+  margin-bottom: 120px;
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.team-list-item {
+  flex: 0 0 270px;
+  padding: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: transform 0.2s ease-in, box-shadow 0.3s linear;
+}
+
+.team-list-image {
+  filter: grayscale(1);
+  transition: filter 0.2s ease-out;
+}
+
+.team-list-item:hover .team-list-image {
+  filter: grayscale(0.3);
+}
+
+.team-list-name {
+  margin-top: 26px;
+  margin-bottom: 10px;
+  font-size: 22px;
+  line-height: 26px;
+  color: #2d3033;
+}
+
+.team-list-occupation {
+  margin-top: 0;
+  margin-bottom: 26px;
+  font-size: 13px;
+  line-height: 16px;
+  color: #e84545;
+  text-transform: uppercase;
+}
+
+.team-list-about {
+  margin-bottom: 26px;
+  margin-top: 0;
+  font-size: 14px;
+}
+
+.team-list-socials {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.team-list-socials li {
+  margin-right: 4px;
+}
+
+.team-list-socials li:last-child {
+  margin-right: 0;
+}
+
+.team-list-socials a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgb(232, 236, 238);
+}
+
+.team-list-socials a:hover svg {
+  fill: #e84545;
+}
+
+.team-list-socials svg {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  fill: #c6cacc;
+  transition: fill 0.2s linear;
+}
+
+.page-footer {
+  color: #fff;
+  background-color: #3a3e64;
+}
+
+.page-footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 246px;
+}
+
+.download-button {
+  border: none;
+  margin: 0;
+  padding: 14px 82px;
+  background-color: #e84545;
+  font-size: 13px;
+  line-height: 21px;
+  font-weight: 600;
+  color: #ffffff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* visually-hidden helper */
+.visually-hidden:not(:focus):not(:active),
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* MEDIA */
+
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .icon-tools::before {
+    background-image: url('../img/icons/features/icon-tools@2x.png');
+  }
+
+  .icon-computer::before {
+    background-image: url('../img/icons/features/icon-computer@2x.png');
+  }
+
+  .icon-bulb::before {
+    background-image: url('../img/icons/features/icon-bulb@2x.png');
+  }
+
+  .icon-atom::before {
+    background-image: url('../img/icons/features/icon-atom@2x.png');
+  }
+
+  .icon-case::before {
+    background-image: url('../img/icons/features/icon-case@2x.png');
+  }
+
+  .icon-download::before {
+    background-image: url('../img/icons/features/icon-download@2x.png');
+  }
+}
