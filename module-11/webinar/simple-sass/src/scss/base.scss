@@ -1,0 +1,21 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  background-color: rgba($primary-accent-color, 0.3);
+  font-family: $primary-font-stack;
+  color: $primary-dark-color;
+}

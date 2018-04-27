@@ -1,0 +1,29 @@
+@mixin font-settings($size, $height) {
+  font-size: $size;
+  line-height: $height;
+}
+
+@mixin pseudo($display: inline-block, $content: '') {
+  display: $display;
+  content: $content;
+}
+
+@mixin bg-image($path: '', $size: cover, $repeat: no-repeat, $pos: center) {
+  background-image: url($path);
+  background-size: $size;
+  background-repeat: $repeat;
+  background-position: $pos;
+}
+
+@mixin center-flex($type: 'all') {
+  display: flex;
+
+  @if $type== 'all' {
+    justify-content: center;
+    align-items: center;
+  } @else if $type== 'hor' {
+    justify-content: center;
+  } @else if $type== 'ver' {
+    align-items: center;
+  }
+}

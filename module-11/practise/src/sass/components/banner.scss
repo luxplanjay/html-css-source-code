@@ -1,0 +1,16 @@
+.banner {
+  @include center-flex('all');
+  min-height: 600px;
+  margin-bottom: 120px;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(239, 59, 54, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    linear-gradient(to top, rgba(0, 210, 255, 0.3), rgba(145, 140, 170, 0.3)),
+    url('../img/banner.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

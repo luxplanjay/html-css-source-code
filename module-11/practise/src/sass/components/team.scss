@@ -1,0 +1,37 @@
+.team__item {
+  flex: 0 0 270px;
+  padding: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: transform 0.2s ease-in, box-shadow 0.3s linear;
+
+  &:hover .team__item-img {
+    filter: grayscale(0.3);
+  }
+}
+
+.team__item-img {
+  filter: grayscale(1);
+  transition: filter 0.2s ease-out;
+}
+
+.team__item-name {
+  margin-top: 26px;
+  margin-bottom: 10px;
+  font-size: 22px;
+  line-height: 26px;
+  color: $primary-dark-color;
+}
+
+.team__item-occupation {
+  margin-top: 0;
+  margin-bottom: 26px;
+  font-size: 13px;
+  line-height: 16px;
+  color: $primary-accent-color;
+  text-transform: uppercase;
+}
+
+.team__item-about {
+  margin-bottom: 26px;
+  margin-top: 0;
+}

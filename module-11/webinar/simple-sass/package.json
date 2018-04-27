@@ -1,0 +1,16 @@
+{
+  "name": "webinar-24-04",
+  "version": "1.0.0",
+  "description": "npm basics",
+  "main": "index.js",
+  "scripts": {
+    "scss:build": "node-sass src/scss/styles.scss -o src/css",
+    "scss:watch": "node-sass --watch src/scss/styles.scss -o src/css",
+    "build": "npm run scss:build && npm run scss:watch"
+  },
+  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.8.3"
+  }
+}

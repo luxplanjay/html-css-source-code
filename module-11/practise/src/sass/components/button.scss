@@ -1,0 +1,13 @@
+.button {
+  @extend %button;
+}
+
+.download__button {
+  padding: 14px 82px;
+  background-color: $primary-accent-color;
+  font-size: 13px;
+  line-height: 21px;
+  font-weight: 600;
+  color: $primary-white-color;
+  text-transform: uppercase;
+}

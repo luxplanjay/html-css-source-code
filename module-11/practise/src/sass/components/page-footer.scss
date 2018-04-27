@@ -1,0 +1,10 @@
+.page-footer {
+  color: $primary-white-color;
+  background-color: $secondary-bg-color;
+}
+
+.page-footer__container {
+  @include center-flex('ver');
+  justify-content: space-between;
+  min-height: 246px;
+}

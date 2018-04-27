@@ -1,0 +1,31 @@
+.socials {
+  @extend %list;
+  display: flex;
+}
+
+.socials__item {
+  margin-right: 4px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.socials__link {
+  @include center-flex('all');
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgb(232, 236, 238);
+
+  &:hover .socials__icon {
+    fill: $primary-accent-color;
+  }
+}
+
+.socials__icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  fill: $border-color;
+  transition: fill 0.2s linear;
+}

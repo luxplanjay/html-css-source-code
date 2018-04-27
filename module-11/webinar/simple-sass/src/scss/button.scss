@@ -1,0 +1,22 @@
+.button-primary {
+  @extend %button;
+  background-color: #2196f3;
+
+  &::before {
+    display: inline-block;
+    content: '\2192';
+  }
+
+  &:hover,
+  &:focus {
+    color: $primary-accent-color;
+  }
+}
+
+.button-text {
+  color: $primary-dark-color;
+}
+
+.button-secondary {
+  @extend %button;
+}

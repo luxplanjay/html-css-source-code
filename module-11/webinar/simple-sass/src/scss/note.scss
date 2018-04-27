@@ -1,0 +1,9 @@
+.note-error {
+  @extend %note;
+  background-color: red;
+}
+
+.note-success {
+  @extend %note;
+  background-color: green;
+}

@@ -1,0 +1,33 @@
+
+// Storing Values in Maps
+
+// Color map
+$colors: (
+  primary-dark: #212121,
+  secondary-dark: #424242,
+  suplement-dark: #616161,
+  primary-light: #ffffff,
+  code-highlight: #f7f7f7,
+  note-accent: #fff8e1,
+  note-border: #f9a825,
+  warn-accent: #ffebee,
+  warn-border: #d32f2f
+);
+
+// color picker function
+@function color($key) {
+  @if map-has-key($colors, $key) {
+    @return map-get($colors, $key);
+  }
+
+  @return null;
+}
+
+
+.text {
+  color: color(warn-border);
+  background-color: color(note-border);
+}
+
+
+

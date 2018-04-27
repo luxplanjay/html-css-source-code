@@ -1,0 +1,20 @@
+.site-navigation {
+  @extend %list;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+.site-navigation__link {
+  @extend %link;
+  color: $primary-white-color;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 16px;
+  transition: color 0.2s linear;
+
+  &:hover,
+  &:focus {
+    color: $primary-accent-color;
+  }
+}
